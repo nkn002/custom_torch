@@ -1,3 +1,6 @@
+void transpose(array2d_t<float>& a, array2d_t<float>& output);
+void mm(array2d_t<float>& input1, array2d_t<float>& input2, array2d_t<float>& output);
+void sum_two_tensors(array2d_t<float>& input1, array2d_t<float>& input2, array2d_t<float>& output);
 void gspmmv(graph_t& graph, array2d_t<float>& input1, array2d_t<float>& output, bool reverse, bool norm);
 void gspmmve(graph_t& graph, array2d_t<float>& input1, array1d_t<float>& edge_input, array2d_t<float>& output, op_t op, bool reverse);
 void gspmme(graph_t& graph, array1d_t<float>& edge_input, array1d_t<float>& output, op_t op, bool reverse);
